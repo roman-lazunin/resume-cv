@@ -162,6 +162,7 @@
     display: grid;
     background-color: #e9ecef;
     border-radius: 10px;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
     grid-template-rows: auto 1fr auto;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -169,6 +170,7 @@
     -o-border-radius: 10px;
     overflow: hidden;
     gap: 10px;
+    
 }
 
 .card button{
