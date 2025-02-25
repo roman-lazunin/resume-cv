@@ -2,7 +2,8 @@
     {
         "title": "Login sida Design",
         "description": "Login sida för att logga in på en webbplats.",
-        "image": "image1.jpg"
+        "image": "image1.jpg",
+        "link": "https://github.com/roman-lazunin/F25D-LoginPage"
     },
     {
         "title": "CV Sida",

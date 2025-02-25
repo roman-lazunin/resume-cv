@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman Lazunin</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 </head>
 <body>
 
 
-    <div class="grid-container">
         <!--Header-->
         <header class="header">
-            <div class="menu">
-                <div class="menu-item" href="index.html">Hem</div>
-                <div class="menu-item" href="portfolio.html">Projekt</div>
-                <div class="menu-item" href="aboutme.html">Kontakt</div>
-            </div>
+            <nav class="menu">
+                <a class="menu-item current-menu-item" href="index.html">Hem</a>
+                <a class="menu-item" href="portfolio.html">Projekt</a>
+                <a class="menu-item" href="aboutme.html">Kontakt</a>
+            </nav>
         </header>
         <!--Content-->
-        <main class="content content-grid-container">
             <div class="profile-container">
                 <div class="card">
                     <img id="profile-image" src="assets/images/Roman.png" alt="Roman Lazunin Profile Picture">
@@ -41,15 +39,16 @@
                 <!-- Projects will be added here -->
             </div>
         </div>
-        </main>
 
 
         <!--Footer-->
-        <footer class="footer">
+        <footer class="footer">            
             <p>&copy 2025 Roman Lazunin </p>
+            <a href="https://www.linkedin.com/in/roman-lazunin/" target="_blank">
+                <img src="assets/logo/LinkedIn_icon.svg.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:roman@lazunin.se">roman@lazunin.se</a>
         </footer>
-        
-    </div>
     
 </body>
 
@@ -68,6 +67,9 @@
                             <h2>${item.title}</h2>
                             <p>${item.description}</p>
                         </div>
+                            <a href="${item.link}" target="_blank">
+                                <button>Github</button>
+                            </a>
                     `;
                     projectsContainer.appendChild(card);
                 });
