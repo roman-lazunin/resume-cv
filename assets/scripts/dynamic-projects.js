@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             const projectsContainer = document.getElementById('projects-container');
-            projectsContainer.innerHTML = '';
+
+            document.getElementById('laddar').remove();
             data.forEach(item => {
 
                 const cardLink = document.createElement('a');
