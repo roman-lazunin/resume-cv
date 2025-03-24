@@ -1,0 +1,66 @@
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 20px;
+    align-items: center;
+    background-color: var(--color-bg-primary);
+}
+
+.resume-section .title-section {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.resume-section .card {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+        "company date"
+        "position date"
+        "description description";
+    gap: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--color-bg-secondary);
+    box-shadow: 1px 0px 10px var(--color-shadow);
+    width: 100%;
+    max-width: 800px;
+}
+
+.resume-section .card h2 {
+    grid-area: company;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.resume-section .card h3 {
+    grid-area: position;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.resume-section .card time {
+    grid-area: date;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    text-align: right;
+    margin: 0;
+}
+
+.resume-section .card .description {
+    grid-area: description;
+    font-size: 16px;
+    color: var(--color-text-primary);
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.resume-section .card:nth-child(even) {
+    background-color: var(--color-bg-primary);
+}

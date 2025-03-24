@@ -3,120 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt Roman Lazunin</title>
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/portfolio.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="menu">
+            <a class="menu-item" href="index.html">Hem</a>
+            <a class="menu-item current-menu-item" href="portfolio.html">Projekt</a>
+            <a class="menu-item" href="about.html">Kontakt</a>
+        </nav>
+    </header>
 
+    <main id="resume-section">
+    </main>
 
-    <div class="grid-container">
-
-        <!--Header-->
-        <header class="header">
-            <nav class="menu">
-                <a class="menu-item" href="index.html">Hem</a>
-                <a class="menu-item current-menu-item" href="portfolio.html">Projekt</a>
-                <a class="menu-item" href="aboutme.html">Kontakt</a>
-            </nav>
-        </header>
-        <!--Content-->
-            <div class="projects-section">
-            <h1>Projekt</h1>
-            <div class="projects-container" id="projects-container">
-            </div>
-        </div>
-
-        <div class="projects-section">
-            <h1>Erfarenhet</h1>
-            <div class="resume-container">
-                <div class="card">
-                        <h2>Teleperformance</h2>
-                        <h3>Teknisk Rådgivare</h3>
-                        <span>Heltid/Deltid - 2022 maj - Nu</span>
-                        <div class="description">
-                        <p>
-                            - Felsökning och support för tekniska problem
-                        </p>
-                        <p>
-                            - Flera grejer
-                        </p>
-                        <p>
-                            - Hantering av kundärenden
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>TXL IT</h2>
-                    <h3>Business Development Manager</h3>
-                    <span>Deltid - 2022 juni - Nu</span>
-                    <div class="description">
-                    <p>
-                        - Planering och genomförande av marknadsföringsstrategier
-                    </p>
-                    <p>
-                        - Affärsutveckling
-                    </p>
-                    <p>
-                        - Flera grejer
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <h2>Teleperformance</h2>
-                <h3>Teknisk Rådgivare</h3>
-                <span>2022 maj - Nu</span>
-                <div class="description">
-                <p>
-                    - Felsökning och support för tekniska problem
-                </p>
-                <p>
-                    - Flera grejer
-                </p>
-                <p>
-                    - Hantering av kundärenden
-                </p>
-            </div>
-        </div>
-        </div>
-
-        <!--Footer-->
-        <footer class="footer">            
-            <p>&copy 2025 Roman Lazunin </p>
-            <a href="https://www.linkedin.com/in/roman-lazunin/" target="_blank">
-                <img src="assets/logo/LinkedIn_icon.svg.png" alt="LinkedIn">
-            </a>
-            <a href="mailto:roman@lazunin.se">roman@lazunin.se</a>
-        </footer>
-        
-    </div>
-    
+    <footer class="footer">            
+        <p>&copy 2025 Roman Lazunin </p>
+        <a href="https://www.linkedin.com/in/roman-lazunin/" target="_blank">
+            <img src="assets/logo/LinkedIn_icon.svg.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:roman@lazunin.se">roman@lazunin.se</a>
+    </footer>
+    <script src="./assets/scripts/dynamic-resume.js"></script>
 </body>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        fetch('projects.json')
-            .then(response => response.json())
-            .then(data => {
-                const projectsContainer = document.getElementById('projects-container');
-                data.forEach(item => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <img src="assets/images/${item.image}" alt="${item.title}">
-                        <div class="card-content">
-                            <h2>${item.title}</h2>
-                            <p>${item.description}</p>
-                        </div>
-                            <a href="${item.link}" target="_blank">
-                                <button>Github</button>
-                            </a>
-                    `;
-                    projectsContainer.appendChild(card);
-                });
-            })
-            .catch(error => console.error('Error fetching data:', error));
-    });
-</script>
-
-
 </html>

@@ -1,0 +1,94 @@
+{
+    "experiences": [
+      {
+        "company": "TXL IT",
+        "position": "Business Development Manager",
+        "dates": "juli 2022 – nu (Deltid)",
+        "description": "Projektägare, UI/UX-designer och ledare för apputveckling samt affärsutveckling."
+      },
+      {
+        "company": "Teleperformance",
+        "position": "Senior Technical Support",
+        "dates": "aug 2023 – nu (Heltid/Deltid)",
+        "description": "Finansiell och teknisk rådgivning. Analyserar transaktioner, köp och konton."
+      },
+      {
+        "company": "Teleperformance",
+        "position": "Technical Support",
+        "dates": "maj 2022 – okt 2022 (Heltid)",
+        "description": "Agerade som mentor för andra medarbetare. Utbildad inom iOS, iPadOS och macOS."
+      },
+      {
+        "company": "Samtrans Omsorgsresor AB",
+        "position": "COVID-19 Packare",
+        "dates": "maj 2022 – okt 2022 (6 månader)",
+        "description": "Packade COVID-19-självtester. Introducerade nya personer och kontrollerade slutprodukten."
+      },
+      {
+        "company": "Klarna - Praktik",
+        "position": "Mjukvaruprogrammerare",
+        "dates": "mars 2018 – mars 2018 (1 månad)",
+        "description": "Skapade en handelswebbapplikation i ett fullstackteam. Arbetade med JavaScript, Node.js, Heroku, Git, GitHub och Travis CI. Använde agila metoder (Scrum, Kanban) och byggde automatiserade testsystem med Travis CI."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Mediainstitutet",
+        "degree": "Online Video Producer, Cinematography and Film/Video Production",
+        "dates": "aug 2023 – dec 2024",
+        "description": "Inriktning på videokameraarbete och kamerateknik (Video Camera, Camera Operation)."
+      },
+      {
+        "institution": "Sälj & Marknadshögskolan",
+        "degree": "Bachelor's degree in International Sales and Marketing",
+        "dates": "2019 – 2021",
+        "description": "Fördjupning i försäljning, distribution och marknadsföring."
+      },
+      {
+        "institution": "Cybergymnasium",
+        "degree": "Teknikprogrammet – Informations- och medieteknik",
+        "dates": "2018 – 2019",
+        "description": "Fokus på programmering."
+      },
+      {
+        "institution": "Thoren innovation school",
+        "degree": "Teknikprogrammet – Informations- och medieteknik",
+        "dates": "2016 – 2018",
+        "description": "Fokus på programmering 6 Entreprenörskap."
+      },
+      {
+        "institution": "Sigtunaskolan Humanistiska Läroverket (SSHL)",
+        "degree": "Grundlärarprogrammet, åk 7–9",
+        "dates": "aug 2013 – jun 2016",
+        "description": "Aktiviteter och föreningar: Life-Link, hjälpte till att skapa och planera en internationell konferens i Sigtuna 2014."
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "Node.js",
+      "Python",
+      "UI/UX Design",
+      "iOS/iPadOS/macOS",
+      "Technical Support",
+      "Customer Service",
+      "Leadership",
+      "Agile Methodologies (Scrum, Kanban)",
+      "Git/GitHub",
+      "Test Automation (Travis CI)",
+      "Object-Oriented Programming (OOP)",
+      "Responsive Design",
+      "Video Camera / Camera Operation",
+      "Project Management",
+      "Quality Control"
+    ],
+    "languages": [
+      {
+        "name": "Swedish",
+        "proficiency": "Native"
+      },
+      {
+        "name": "English",
+        "proficiency": "Professional Working Proficiency"
+      }
+    ]
+  }

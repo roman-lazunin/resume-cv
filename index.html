@@ -5,43 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman Lazunin</title>
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/home.css">
 </head>
 <body>
 
-
-        <!--Header-->
         <header class="header">
             <nav class="menu">
                 <a class="menu-item current-menu-item" href="index.html">Hem</a>
                 <a class="menu-item" href="portfolio.html">Projekt</a>
-                <a class="menu-item" href="aboutme.html">Kontakt</a>
+                <a class="menu-item" href="about.html">Kontakt</a>
             </nav>
         </header>
-        <!--Content-->
-            <div class="profile-container">
-                <div class="card">
-                    <img id="profile-image" src="assets/images/Roman.png" alt="Roman Lazunin Profile Picture">
-                </div>
-                <div class="card">
-                    <div id="bio">
-                    <h1>Roman Lazunin</h1>
-                    <h3>Webbutvecklare</h3>
+        <main>
+            <section class="profile-container">
+                    <img id="profile-image" src="assets/images/Roman.png" alt="Porträttbild på Roman Lazunin">
+                <div class="bio-container">
+                    <h1 class="name" >Roman Lazunin</h1>
+                    <h3 class="title">Frontend Utvecklare</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Roman är en sån som inte stannar vid ett hinder – om vägen är blockerad hittar han en annan. Det finns alltid fler stigar genom berget.
                     </p>
-                    <h4>html, css, javascript</h4>
                 </div>
-                </div>
-            </div>
-            <div class="projects-section">
-            <h1>Projekt</h1>
-            <div class="projects-container" id="projects-container">
-                <!-- Projects will be added here -->
-            </div>
-        </div>
+        </section>
+        
+            <h1 class="title-section">Projekt</h1>
+            <section class="projects-container" id="projects-container">
+                <p>Laddar Projekt...</p>
+            </section>
+    </main>
 
-
-        <!--Footer-->
         <footer class="footer">            
             <p>&copy 2025 Roman Lazunin </p>
             <a href="https://www.linkedin.com/in/roman-lazunin/" target="_blank">
@@ -52,31 +44,6 @@
     
 </body>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        fetch('projects.json')
-            .then(response => response.json())
-            .then(data => {
-                const projectsContainer = document.getElementById('projects-container');
-                data.forEach(item => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <img src="assets/images/${item.image}" alt="${item.title}">
-                        <div class="card-content">
-                            <h2>${item.title}</h2>
-                            <p>${item.description}</p>
-                        </div>
-                            <a href="${item.link}" target="_blank">
-                                <button>Github</button>
-                            </a>
-                    `;
-                    projectsContainer.appendChild(card);
-                });
-            })
-            .catch(error => console.error('Error fetching data:', error));
-    });
-</script>
-
+<script src="assets/scripts/dynamic-projects.js"></script>
 
 </html>
