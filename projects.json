@@ -6,13 +6,14 @@
         "link": "https://github.com/roman-lazunin/F25D-LoginPage"
     },
     {
-        "title": "CV Sida",
-        "description": "Min CV sida.",
-        "image": "image2.jpg"
+        "title": "CV",
+        "description": "Sidan som du är på just nu.",
+        "image": "image2.jpg",
+        "link": "https://github.com/roman-lazunin/resume-cv"
     },
     {
-        "title": "Projekt 3",
-        "description": "Något Annat",
+        "title": "Restaurang Sida",
+        "description": "Exempel sida för restaurang.",
         "image": "image3.jpg"
     },
     {
