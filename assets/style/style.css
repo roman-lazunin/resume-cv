@@ -50,10 +50,34 @@ h1 {
     background-color: var(--color-primary-dark);
 }
 
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.fade-button {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.fade-button.hidden {
+    opacity: 0;
+}
+
+
 .title-section{
+    font-size: 28px;
+    font-weight: 500;
     color: var(--color-primary);
-    text-align: left;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .footer{
